@@ -9,3 +9,7 @@ body .search h1 { text-transform: uppercase; }
 body .search button { background-color: #e84118; color: #fff; border: 2px solid #e84118; border-radius: 5px; padding: 5px 20px; font-size: 20px; }
 
 body .search input { height: 35px; width: 250px; margin: 15px 0; text-align: center; }
+
+body .result { padding: 20px; }
+
+body .result #countries > li { list-style: none; text-transform: uppercase; margin-top: 25px; font-size: 25px; }

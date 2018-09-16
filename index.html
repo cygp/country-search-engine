@@ -10,10 +10,25 @@
 			<input id="country-name" type="text" placeholder="Enter the country" />
 			<button id="search">Search a country</button>
 		</div>
-		<h2>List of countries</h2>
-		<ul id="countries">
-		  <li>No data</li>
-		</ul>
+		<div class="result">
+			<h2>List of countries</h2>
+			<div id="countries">
+			  <p>No data</p>
+			</div>
+		</div>
+		<script id="country-template" type="x-tmpl-mustache">
+	      <div class="card">
+	        <h3>{{ name }}</h3>
+	        <img src="https://www.countryflags.io/{{ alpha2Code }}/flat/64.png"
+	        <ul>
+	        	<li>Capital: {{ capital }}</li>
+	        	<li>Population: {{ population }}</li>
+	        	<li>Area: {{ area }} sq.km</li>
+	        	<li>Languages: {{ lang }}</li>
+	        </ul>
+	      </div>
+    	</script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

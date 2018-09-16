@@ -6,7 +6,9 @@ body .search { display: -ms-flexbox; display: flex; -ms-flex-direction: column; 
 
 body .search h1 { text-transform: uppercase; }
 
-body .search button { background-color: #FC427B; color: #fff; border: 2px solid #FC427B; border-radius: 5px; padding: 5px 20px; font-size: 20px; }
+body .search button { background-color: #FC427B; color: #fff; border: 2px solid #FC427B; border-radius: 5px; padding: 5px 20px; font-size: 20px; transition: .5s; }
+
+body .search button:hover { transform: scale(1.05); }
 
 body .search button:focus { outline: 0; }
 

@@ -1,8 +1,9 @@
 * {box-sizing: border-box;}
 body {
 	color: #fff;
-	background-color: #40739e;
+	background-color: #58B19F;
 	margin: 0 auto;
+	font-family: 'Roboto Mono', monospace;
 	.search {
 		display: flex;
     	flex-direction: column;
@@ -11,12 +12,15 @@ body {
     		text-transform: uppercase;
     	}
 		button {
-			background-color: #e84118;
+			background-color: #FC427B;
 			color: #fff;
-			border: 2px solid #e84118;
+			border: 2px solid #FC427B;
 			border-radius: 5px;
 			padding: 5px 20px;
 			font-size: 20px;
+			:focus { 
+				outline: 0;
+			}		
 		}
 		input {
 			height: 35px;

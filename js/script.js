@@ -40,7 +40,14 @@
 		    // ulEl.appendChild(liPopulation);
 		    // ulEl.appendChild(liArea);
 		    // ulEl.appendChild(liLang);
-		    var country = {name: item.name, capital: item.capital, alpha2Code: item.alpha2Code, population: item.population, area: item.area, lang: item.languages};
+		    var country = {
+		    	name: item.name, 
+		    	capital: item.capital, 
+		    	alpha2Code: item.alpha2Code, 
+		    	population: item.population, 
+		    	area: item.area, 
+		    	lang: item.languages
+		    };
 			var generatedCountry = Mustache.render(templateCountry, country);
 			countriesList.innerHTML += generatedCountry;
 	    });

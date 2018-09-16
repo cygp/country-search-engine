@@ -1,0 +1,28 @@
+* {box-sizing: border-box;}
+body {
+	color: #fff;
+	background-color: #40739e;
+	margin: 0 auto;
+	.search {
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	h1{
+    		text-transform: uppercase;
+    	}
+		button {
+			background-color: #e84118;
+			color: #fff;
+			border: 2px solid #e84118;
+			border-radius: 5px;
+			padding: 5px 20px;
+			font-size: 20px;
+		}
+		input {
+			height: 35px;
+	    	width: 250px;
+	    	margin: 15px 0;
+	    	text-align: center;
+		}
+	}
+}

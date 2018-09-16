@@ -16,8 +16,25 @@
 	    countriesList.innerHTML = '';
 	    resp.forEach(function(item) {
 	        var liEl = document.createElement('li');
-		    liEl.innerText = item.name + ', Capital: ' + item.capital + ', Population: ' + item.population;
+	        var ulEl = document.createElement('ul');
+	        var liCapital = document.createElement('li');
+	        var liPopulation = document.createElement('li');
+	        var liArea = document.createElement('li');
+	        var liLang = document.createElement('li');
+	        var flag = document.createElement('img'); 
+	        flag.src = 'https://www.countryflags.io/' + item.alpha2Code + '/flat/64.png';
+		    liEl.innerText = item.name;
+		    liCapital.innerText = 'Capital: ' + item.capital;
+		    liPopulation.innerText = 'Population: ' + item.population;
+		    liArea.innerText = 'Area: ' + item.area + ' sq.km';
+		    liLang.innerText = "Languages: " + item.languages;
 		    countriesList.appendChild(liEl);
+		    countriesList.appendChild(flag);
+		    countriesList.appendChild(ulEl);
+		    ulEl.appendChild(liCapital);
+		    ulEl.appendChild(liPopulation);
+		    ulEl.appendChild(liArea);
+		    ulEl.appendChild(liLang);
 	    });
 	}
 })();

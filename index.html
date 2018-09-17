@@ -14,19 +14,33 @@
 		<div class="result">
 			<h2>List of countries</h2>
 			<div id="countries">
-			  <p>No data</p>
+			  <h3>No data</h3>
 			</div>
 		</div>
 		<script id="country-template" type="x-tmpl-mustache">
 	      <div class="card">
-	        <h3>{{ name }}</h3>
-	        <img src="https://www.countryflags.io/{{ alpha2Code }}/flat/64.png"
-	        <ul>
-	        	<li>Capital: {{ capital }}</li>
-	        	<li>Population: {{ population }}</li>
-	        	<li>Area: {{ area }} sq.km</li>
-	        	<li>Languages: {{ lang }}</li>
-	        </ul>
+          <div class="name">
+            <img src="https://www.countryflags.io/{{ alpha2Code }}/flat/64.png">
+            <h3>{{ name }}</h3>
+          </div>
+          <table>
+            <tr>
+              <th>Capital: </th>
+              <td>{{ capital }}</td>
+            </tr>
+            <tr>
+              <th>Population: </th>
+              <td>{{ population }}</td>
+            </tr>
+            <tr>
+              <th>Area: </th>
+              <td>{{ area }} sq.km</td>
+            </tr>
+            <tr>
+              <th>Languages: </th>
+              <td>{{ lang }}</td>
+            </tr>
+          </table>
 	      </div>
     	</script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>

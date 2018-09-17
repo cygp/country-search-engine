@@ -12,13 +12,13 @@ body {
     		text-transform: uppercase;
     	}
 		  button {
-        background-color: #FC427B;
-        color: #fff;
-        border: 2px solid #FC427B;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 20px;
-        transition: .5s;
+	        background-color: #FC427B;
+	        color: #fff;
+	        border: 2px solid #FC427B;
+	        border-radius: 5px;
+	        padding: 5px 20px;
+	        font-size: 20px;
+	        transition: .5s;
 			&:hover {
 				transform: scale(1.05);
 			}
@@ -28,9 +28,9 @@ body {
 		}
 		input {
 			height: 35px;
-	    width: 250px;
-	    margin: 15px 0;
-	    text-align: center;
+		    width: 250px;
+		    margin: 15px 0;
+		    text-align: center;
 		}
 	}
 	.result {

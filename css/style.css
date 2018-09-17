@@ -2,7 +2,7 @@
 
 body { color: #fff; background-color: #58B19F; margin: 0 auto; font-family: 'Roboto Mono', monospace; }
 
-body .search { display: flex; flex-direction: column; align-items: center; }
+body .search { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
 body .search h1 { text-transform: uppercase; }
 
@@ -18,13 +18,13 @@ body .result { padding: 20px; }
 
 body .result h2 { text-align: center; }
 
-body .result #countries { margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; }
+body .result #countries { margin-top: 25px; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; }
 
 body .result #countries .card { padding: 10px; background-color: #44887a; margin: 10px; width: 390px; transition: .7s; }
 
 body .result #countries .card:hover { background-color: #416f66; }
 
-body .result #countries .card .name { display: flex; align-items: center; }
+body .result #countries .card .name { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
 body .result #countries .card h3 { font-size: 17px; text-transform: uppercase; margin: 0 0 0 10px; display: inline-block; max-width: 300px; }
 
